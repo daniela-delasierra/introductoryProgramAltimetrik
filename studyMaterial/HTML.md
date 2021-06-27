@@ -2,7 +2,9 @@
 
 # HTML
 
-HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content."Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. Elements![img](https://lh5.googleusercontent.com/JbpJz_GH7Da0VQB6ejcCIFQqzNPg7v9Sex3YQNftGhrnoEO8fMoiCrB9bd_Sn4QHSnEHdalTGXTnCEMTLn1LSTSxZTz7l0vVlRqEO8QtUMdpgc4oSMjLs4hdcxLfWdBJpyPJzJQn)
+HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content."Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.
+## Elements
+![img](https://lh5.googleusercontent.com/JbpJz_GH7Da0VQB6ejcCIFQqzNPg7v9Sex3YQNftGhrnoEO8fMoiCrB9bd_Sn4QHSnEHdalTGXTnCEMTLn1LSTSxZTz7l0vVlRqEO8QtUMdpgc4oSMjLs4hdcxLfWdBJpyPJzJQn)
 
 The main parts of our element are as follows:
 
@@ -23,13 +25,14 @@ The main parts of our element are as follows:
 
 HTML comments are not displayed in the browser, but they can help document your HTML source code.
 
-You can add comments to your HTML source by using the following syntax:*<!-- Write your comments here -->*
+You can add comments to your HTML source by using the following syntax:*\<!-- Write your comments here -->*
 
 ## HTML Documents
 
-All HTML documents must start with a document type declaration: <!DOCTYPE html>.
-The HTML document itself begins with <html> and ends with </html>.
-The visible part of the HTML document is between <body> and </body>.
+All HTML documents must start with a document type declaration: \<!DOCTYPE html>.
+The HTML document itself begins with \<html> and ends with \</html>.
+The visible part of the HTML document is between \<body> and \</body>.
+
 `<!DOCTYPE html>`
 
 `<html>`
@@ -52,28 +55,32 @@ The visible part of the HTML document is between <body> and </body>.
 
 ## The <!DOCTYPE> Declaration
 
-The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+The \<!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
 It must only appear once, at the top of the page (before any HTML tags).
-The <!DOCTYPE> declaration is not case sensitive.
-The <!DOCTYPE> declaration for HTML5 is: <!DOCTYPE html>
+The \<!DOCTYPE> declaration is not case sensitive.
+The \<!DOCTYPE> declaration for HTML5 is: \<!DOCTYPE html>
 
-## HTML <meta> Tag
+## HTML \<meta> Tag
 
-The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+The \<meta> tag defines metadata about an HTML document. Metadata is data (information) about data. 
 
-The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. 
+\<meta> tags always go inside the \<head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
 
-<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
+Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
 
-Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).<head>
+` <head>`
 
-<head>
- <meta charset="UTF-8">
- <meta name="description" content="Free Web tutorials">
- <meta name="keywords" content="HTML, CSS, JavaScript">
- <meta name="author" content="John Doe">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+ `<meta charset="UTF-8">`
+ 
+ `<meta name="description" content="Free Web tutorials">`
+ 
+ `<meta name="keywords" content="HTML, CSS, JavaScript">`
+ 
+` <meta name="author" content="John Doe">`
+
+` <meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+` </head> `
 
 **Attribute**
 
@@ -98,16 +105,16 @@ Metadata will not be displayed on the page, but is machine parsable. Metadata is
 
 ## Headings
 
-HTML headings are defined with the <h1> to <h6> tags. <h1> defines the most important heading. <h6> defines the least important heading.
+HTML headings are defined with the \<h1> to \<h6> tags. \<h1> defines the most important heading. \<h6> defines the least important heading.
 
 ## Paragraphs
 
-The HTML <p> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+The HTML \<p> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 The browser will automatically remove any extra spaces and lines when the page is displayed.
 
 ## HTML Horizontal Rules
 
-The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. The <hr> element is used to separate content (or define a change) in an HTML page.
+The \<hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. The \<hr> element is used to separate content (or define a change) in an HTML page.
 
 ## HTML Line Breaks
 
@@ -115,20 +122,20 @@ The HTML \<br> element defines a line break.
 Use \<br> if you want a line break (a new line) without starting a new paragraph. 
 The \<br> tag is an empty tag, which means that it has no end tag.
 
-## The HTML <pre> Element
+## The HTML \<pre> Element
 
-The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+The text inside a \<pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
 
 ## HTML Quotation and Citation Elements
 
 **Tag**
 
-- [<abbr>](https://www.w3schools.com/tags/tag_abbr.asp)
-- [<address>](https://www.w3schools.com/tags/tag_address.asp)
-- [<bdo>](https://www.w3schools.com/tags/tag_bdo.asp)
-- [<blockquote>](https://www.w3schools.com/tags/tag_blockquote.asp)
-- [<cite>](https://www.w3schools.com/tags/tag_cite.asp)
-- [<q>](https://www.w3schools.com/tags/tag_q.asp)
+- [\<abbr>](https://www.w3schools.com/tags/tag_abbr.asp)
+- [\<address>](https://www.w3schools.com/tags/tag_address.asp)
+- [\<bdo>](https://www.w3schools.com/tags/tag_bdo.asp)
+- [\<blockquote>](https://www.w3schools.com/tags/tag_blockquote.asp)
+- [\<cite>](https://www.w3schools.com/tags/tag_cite.asp)
+- [\<q>](https://www.w3schools.com/tags/tag_q.asp)
 
 **Description**
 
@@ -141,9 +148,9 @@ The text inside a <pre> element is displayed in a fixed-width font (usually Cour
 
 ## HTML Links
 
-The HTML <a> tag defines a hyperlink. It has the following syntax:`<a href="url">link text</a>`
+The HTML \<a> tag defines a hyperlink. It has the following syntax:`<a href="url">link text</a>`
 
-The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+The most important attribute of the \<a> element is the href attribute, which indicates the link's destination.
 The link text is the part that will be visible to the reader.
 Clicking on the link text, will send the reader to the specified URL address.
 
@@ -165,11 +172,11 @@ A local link (a link to a page within the same website) is specified with a rela
 
 ## HTML Images
 
-The HTML <img> tag is used to embed an image in a web page.
+The HTML \<img> tag is used to embed an image in a web page.
 Images are not technically inserted into a web page; images are linked to web pages. 
-The <img> tag creates a holding space for the referenced image.
-The <img> tag is empty, it contains attributes only, and does not have a closing tag.
-The <img> tag has two required attributes: 
+The \<img> tag creates a holding space for the referenced image.
+The \<img> tag is empty, it contains attributes only, and does not have a closing tag.
+The \<img> tag has two required attributes: 
 
 - src - Specifies the path to the image
 - alt - Specifies an alternate text for the image
@@ -194,132 +201,181 @@ Alternatively, you can use the width and height attributes:
 
 ## HTML Tables
 
-The <table> tag defines an HTML table.
-Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. 
-Each table data/cell is defined with a <td> tag.
-By default, the text in <th> elements are bold and centered.
-By default, the text in <td> elements are regular and left-aligned.
+The \<table> tag defines an HTML table.
+Each table row is defined with a \<tr> tag. Each table header is defined with a \<th> tag. 
+Each table data/cell is defined with a \<td> tag.
+By default, the text in \<th> elements are bold and centered.
+By default, the text in \<td> elements are regular and left-aligned.
 
-`<table style="width:100%">
- <tr>
-  <th>Firstname</th>
-  <th>Lastname</th>
-  <th>Age</th>
- </tr>
- <tr>
-  <td>Jill</td>
-  <td>Smith</td>
-  <td>50</td>
- </tr>
- <tr>
-  <td>Eve</td>
-  <td>Jackson</td>
-  <td>94</td>
- </tr>
-</table>`
+`<table style="width:100%">`
+
+ `<tr>`
+ 
+  `<th>Firstname</th>`
+  
+  `<th>Lastname</th>`
+  
+  `<th>Age</th>`
+  
+ `</tr>`
+ 
+ `<tr>`
+ 
+  `<td>Jill</td>`
+  
+ ` <td>Smith</td>`
+ 
+  `<td>50</td>`
+  
+ `</tr>`
+ 
+ `<tr>`
+ 
+  `<td>Eve</td>`
+  
+  `<td>Jackson</td>`
+  
+  `<td>94</td>`
+  
+ `</tr>`
+ 
+`</table>`
+
 
 ## HTML Lists
 
 ### Unordered HTML List
 
-An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+An unordered list starts with the \<ul> tag. Each list item starts with the \<li> tag.
 The list items will be marked with bullets (small black circles) by default.
 
-`<ul>
- <li>Coffee</li>
- <li>Tea</li>
- <li>Milk</li>
-</ul>`
+` <ul>`
+
+ ` <li>Coffee</li>`
+ 
+ ` <li>Tea</li>`
+ 
+` <li>Milk</li>`
+
+`</ul>`
 
 ### Ordered HTML List
 
-An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+An ordered list starts with the \<ol> tag. Each list item starts with the \<li> tag.
 The list items will be marked with numbers by default:
 
-`<ol>
- <li>Coffee</li>
- <li>Tea</li>
- <li>Milk</li>
-</ol>`
+`<ol>`
+
+ `<li>Coffee</li>`
+ 
+ `<li>Tea</li>`
+ 
+ `<li>Milk</li>`
+ 
+`</ol>`
 
 ### HTML Description Lists
 
 A description list is a list of terms, with a description of each term.
-The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
+The \<dl> tag defines the description list, the \<dt> tag defines the term (name), and the \<dd> tag describes each term.
 
-`<dl>
- <dt>Coffee</dt>
- <dd>- black hot drink</dd>
- <dt>Milk</dt>
- <dd>- white cold drink</dd>
-</dl>`
+`<dl>`
+
+ `<dt>Coffee</dt>`
+ 
+ `<dd>- black hot drink</dd>`
+ 
+` <dt>Milk</dt>`
+
+ `<dd>- white cold drink</dd>`
+ 
+`</dl>`
 
 ## HTML Forms
 
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-The HTML <form> element is used to create an HTML form for user input.
-An <input> element can be displayed in many ways, depending on the type attribute.
+The HTML \<form> element is used to create an HTML form for user input.
+An \<input> element can be displayed in many ways, depending on the type attribute.
 
-### The HTML <form> Elements
+### The HTML \<form> Elements
 
-The HTML <form> element can contain one or more of the following form elements:
+The HTML \<form> element can contain one or more of the following form elements:
 
 - \<input>
 - \<label>
 
-The <label> element defines a label for several form elements.
-The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
-The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
-The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+The \<label> element defines a label for several form elements.
+The \<label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+The \<label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the \<label> element, it toggles the radio button/checkbox.
+The for attribute of the \<label> tag should be equal to the id attribute of the \<input> element to bind them together.
 
 - \<select>
 
 The \<select> element defines a drop-down list.
-The <option> elements defines an option that can be selected.
+The \<option> elements defines an option that can be selected.
 By default, the first item in the drop-down list is selected.
 To define a pre-selected option, add the selected attribute to the option.
-`<label **for**="cars">Choose a car:</label>`
-`<select id="cars" name="cars">
- <**option** **value**="volvo">Volvo</**option**>
- <**option** **value**="saab">Saab</**option**>
- <**option** **value**="fiat">Fiat</**option**>
- <**option** **value**="audi">Audi</**option**>
-</select>`
 
-`<**option** **value**="fiat" selected>Fiat</**option**>`
+`<label **for**="cars">Choose a car:</label>`
+
+`<select id="cars" name="cars">`
+
+ `<**option** **value**="volvo" selected>Volvo</**option**>`
+ 
+ `<**option** **value**="saab">Saab</**option**>`
+ 
+ `<**option** **value**="fiat">Fiat</**option**>`
+ 
+ `<**option** **value**="audi">Audi</**option**>`
+ 
+`</select>`
 
 Use the size attribute to specify the number of visible values.
 Use the multiple attribute to allow the user to select more than one value.
 
 - \<textarea>
 
-The <textarea> element defines a multi-line input field (a text area).
+The \<textarea> element defines a multi-line input field (a text area).
 The rows attribute specifies the visible number of lines in a text area.
 The cols attribute specifies the visible width of a text area.
-`<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>`
+
+`<textarea name="message" rows="10" cols="30">`
+
+`The cat was playing in the garden.`
+
+`</textarea>`
 
 - \<button>
 
 The \<button> element defines a clickable button
+
 `<button type="button" onclick="alert('Hello World!')">Click Me!</button>`
 
 - \<fieldset>
 - \<legend>
 
-The <fieldset> element is used to group related data in a form.
-The <legend> element defines a caption for the <fieldset> element.
-`<form action="/action_page.php">
- <fieldset>
-  <legend>Personalia:</legend>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
- </fieldset>
-</form>`
+The \<fieldset> element is used to group related data in a form.
+The \<legend> element defines a caption for the \<fieldset> element.
+
+`<form action="/action_page.php">`
+
+ `<fieldset>`
+ 
+  `<legend>Personalia:</legend>`
+  
+  `<label for="fname">First name:</label><br>`
+  
+  `<input type="text" id="fname" name="fname" value="John"><br>`
+  
+  `<label for="lname">Last name:</label><br>`
+  
+  `<input type="text" id="lname" name="lname" value="Doe"><br><br>`
+  
+  `<input type="submit" value="Submit">`
+  
+ `</fieldset>`
+ 
+`</form>`
 
 - \<datalist>
 
@@ -327,83 +383,103 @@ The <legend> element defines a caption for the <fieldset> element.
 
 - \<optgroup>
 
-  The <datalist> element specifies a list of pre-defined options for an <input> element.
-  The <optgroup> tag is used to group related options in a [<select>](https://www.w3schools.com/tags/tag_select.asp) element (drop-down list).
+  The \<datalist> element specifies a list of pre-defined options for an \<input> element.
+  The \<optgroup> tag is used to group related options in a <\select> element (drop-down list).
   If you have a long list of options, groups of related options are easier to handle for a user.
 
 `<form action="/action_page.php">`
-   `<input list="browsers">`
-   ` <datalist id="browsers">`
-      `  <option value="Internet Explorer">`
-      `<option value="Firefox">`
-      `option value="Chrome">`
-      `  <option value="Opera">`
-      `  <option value="Safari">`
-   ` </datalist>`
+
+`<input list="browsers">`
+
+`<datalist id="browsers">`
+
+`<option value="Internet Explorer">`
+
+`<option value="Firefox">`
+
+`option value="Chrome">`
+
+`<option value="Opera">`
+
+`<option value="Safari">`
+
+`</datalist>`
+
 `</form>`
 
 - \<output>
 
-  The <output> element represents the result of a calculation (like one performed by a script).
-  `<form action="/action_page.php"``
-  ``oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-   0
-   <input type="range" id="a" name="a" value="50">
-   100 +
-   <input type="number" id="b" name="b" value="50">
-   =
-   <output name="x" for="a b"></output>
-   <br><br>
-   <input type="submit">
-  </form>`
+  The \<output> element represents the result of a calculation (like one performed by a script).
+  
+  `<form action="/action_page.php"`
+  
+  `oninput="x.value=parseInt(a.value)+parseInt(b.value)">`
+  
+   `0`
+   
+   `<input type="range" id="a" name="a" value="50">`
+   
+   `100 +`
+   
+   `<input type="number" id="b" name="b" value="50">`
+   
+   `=`
+   
+  ` <output name="x" for="a b"></output>`
+  
+   `<br><br>`
+   
+   `<input type="submit">`
+   
+  `</form>`
 
 ## HTML Input Types
 
 Here are the different input types you can use in HTML:
 
-<input type="button">
+\<input type="button">
 
-<input type="checkbox">
+\<input type="checkbox">
 
-<input type="color">
+\<input type="color">
 
-<input type="date">
+\<input type="date">
 
-<input type="datetime-local">
+\<input type="datetime-local">
 
-<input type="email">
+\<input type="email">
 
-<input type="file">
+\<input type="file">
 
-<input type="hidden">
+\<input type="hidden">
 
-<input type="image">
+\<input type="image">
 
-<input type="month">
+\<input type="month">
 
-<input type="number">
+\<input type="number">
 
-<input type="password">
+\<input type="password">
 
-<input type="radio">
+\<input type="radio">
 
-<input type="range">
+\<input type="range">
 
-<input type="reset">
+\<input type="reset">
 
-<input type="search">
+\<input type="search">
 
-<input type="submit">
+\<input type="submit">
 
-<input type="tel">
+\<input type="tel">
 
-<input type="text">
+\<input type="text">
 
-<input type="time">
+\<input type="time">
 
-<input type="url">
+\<input type="url">
 
-<input type="week">
+\<input type="week">
 
 ## Form Validation
 
