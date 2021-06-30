@@ -2,7 +2,9 @@
 
 # HTML
 
-HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content."Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. Elements![img](https://lh5.googleusercontent.com/JbpJz_GH7Da0VQB6ejcCIFQqzNPg7v9Sex3YQNftGhrnoEO8fMoiCrB9bd_Sn4QHSnEHdalTGXTnCEMTLn1LSTSxZTz7l0vVlRqEO8QtUMdpgc4oSMjLs4hdcxLfWdBJpyPJzJQn)
+HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content."Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.
+## Elements
+![img](https://lh5.googleusercontent.com/JbpJz_GH7Da0VQB6ejcCIFQqzNPg7v9Sex3YQNftGhrnoEO8fMoiCrB9bd_Sn4QHSnEHdalTGXTnCEMTLn1LSTSxZTz7l0vVlRqEO8QtUMdpgc4oSMjLs4hdcxLfWdBJpyPJzJQn)
 
 The main parts of our element are as follows:
 
@@ -23,13 +25,14 @@ The main parts of our element are as follows:
 
 HTML comments are not displayed in the browser, but they can help document your HTML source code.
 
-You can add comments to your HTML source by using the following syntax:*<!-- Write your comments here -->*
+You can add comments to your HTML source by using the following syntax:*\<!-- Write your comments here -->*
 
 ## HTML Documents
 
-All HTML documents must start with a document type declaration: <!DOCTYPE html>.
-The HTML document itself begins with <html> and ends with </html>.
-The visible part of the HTML document is between <body> and </body>.
+All HTML documents must start with a document type declaration: \<!DOCTYPE html>.
+The HTML document itself begins with \<html> and ends with \</html>.
+The visible part of the HTML document is between \<body> and \</body>.
+
 `<!DOCTYPE html>`
 
 `<html>`
@@ -52,14 +55,12 @@ The visible part of the HTML document is between <body> and </body>.
 
 ## The <!DOCTYPE> Declaration
 
-The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+The \<!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
 It must only appear once, at the top of the page (before any HTML tags).
-The <!DOCTYPE> declaration is not case sensitive.
-The <!DOCTYPE> declaration for HTML5 is: <!DOCTYPE html>
+The \<!DOCTYPE> declaration is not case sensitive.
+The \<!DOCTYPE> declaration for HTML5 is: \<!DOCTYPE html>
 
 ## HTML \<meta> Tag
-
-The \<meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
 
 The \<meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
 
@@ -223,28 +224,45 @@ Alternatively, you can use the width and height attributes:
 ## HTML Tables
 
 The \<table> tag defines an HTML table.
-Each table row is defined with a \<tr> tag. Each table header is defined with a <th> tag. 
+Each table row is defined with a \<tr> tag. Each table header is defined with a \<th> tag. 
 Each table data/cell is defined with a \<td> tag.
 By default, the text in \<th> elements are bold and centered.
 By default, the text in \<td> elements are regular and left-aligned.
 
-`<table style="width:100%">
- <tr>
-  <th>Firstname</th>
-  <th>Lastname</th>
-  <th>Age</th>
- </tr>
- <tr>
-  <td>Jill</td>
-  <td>Smith</td>
-  <td>50</td>
- </tr>
- <tr>
-  <td>Eve</td>
-  <td>Jackson</td>
-  <td>94</td>
- </tr>
-</table>`
+`<table style="width:100%">`
+
+ `<tr>`
+ 
+  `<th>Firstname</th>`
+  
+  `<th>Lastname</th>`
+  
+  `<th>Age</th>`
+  
+ `</tr>`
+ 
+ `<tr>`
+ 
+  `<td>Jill</td>`
+  
+ ` <td>Smith</td>`
+ 
+  `<td>50</td>`
+  
+ `</tr>`
+ 
+ `<tr>`
+ 
+  `<td>Eve</td>`
+  
+  `<td>Jackson</td>`
+  
+  `<td>94</td>`
+  
+ `</tr>`
+ 
+`</table>`
+
 
 ## HTML Lists
 
@@ -253,34 +271,47 @@ By default, the text in \<td> elements are regular and left-aligned.
 An unordered list starts with the \<ul> tag. Each list item starts with the \<li> tag.
 The list items will be marked with bullets (small black circles) by default.
 
-`<ul>
- <li>Coffee</li>
- <li>Tea</li>
- <li>Milk</li>
-</ul>`
+` <ul>`
+
+ ` <li>Coffee</li>`
+ 
+ ` <li>Tea</li>`
+ 
+` <li>Milk</li>`
+
+`</ul>`
 
 ### Ordered HTML List
 
 An ordered list starts with the \<ol> tag. Each list item starts with the \<li> tag.
 The list items will be marked with numbers by default:
 
-`<ol>
- <li>Coffee</li>
- <li>Tea</li>
- <li>Milk</li>
-</ol>`
+`<ol>`
+
+ `<li>Coffee</li>`
+ 
+ `<li>Tea</li>`
+ 
+ `<li>Milk</li>`
+ 
+`</ol>`
 
 ### HTML Description Lists
 
 A description list is a list of terms, with a description of each term.
 The \<dl> tag defines the description list, the \<dt> tag defines the term (name), and the \<dd> tag describes each term.
 
-`<dl>
- <dt>Coffee</dt>
- <dd>- black hot drink</dd>
- <dt>Milk</dt>
- <dd>- white cold drink</dd>
-</dl>`
+`<dl>`
+
+ `<dt>Coffee</dt>`
+ 
+ `<dd>- black hot drink</dd>`
+ 
+` <dt>Milk</dt>`
+
+ `<dd>- white cold drink</dd>`
+ 
+`</dl>`
 
 ## HTML Forms
 
@@ -306,15 +337,20 @@ The \<select> element defines a drop-down list.
 The \<option> elements defines an option that can be selected.
 By default, the first item in the drop-down list is selected.
 To define a pre-selected option, add the selected attribute to the option.
-`<label **for**="cars">Choose a car:</label>`
-`<select id="cars" name="cars">
- <**option** **value**="volvo">Volvo</**option**>
- <**option** **value**="saab">Saab</**option**>
- <**option** **value**="fiat">Fiat</**option**>
- <**option** **value**="audi">Audi</**option**>
-</select>`
 
-`<**option** **value**="fiat" selected>Fiat</**option**>`
+`<label **for**="cars">Choose a car:</label>`
+
+`<select id="cars" name="cars">`
+
+ `<**option** **value**="volvo" selected>Volvo</**option**>`
+ 
+ `<**option** **value**="saab">Saab</**option**>`
+ 
+ `<**option** **value**="fiat">Fiat</**option**>`
+ 
+ `<**option** **value**="audi">Audi</**option**>`
+ 
+`</select>`
 
 Use the size attribute to specify the number of visible values.
 Use the multiple attribute to allow the user to select more than one value.
@@ -324,13 +360,17 @@ Use the multiple attribute to allow the user to select more than one value.
 The \<textarea> element defines a multi-line input field (a text area).
 The rows attribute specifies the visible number of lines in a text area.
 The cols attribute specifies the visible width of a text area.
-`<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>`
+
+`<textarea name="message" rows="10" cols="30">`
+
+`The cat was playing in the garden.`
+
+`</textarea>`
 
 - \<button>
 
 The \<button> element defines a clickable button
+
 `<button type="button" onclick="alert('Hello World!')">Click Me!</button>`
 
 - \<fieldset>
@@ -338,16 +378,26 @@ The \<button> element defines a clickable button
 
 The \<fieldset> element is used to group related data in a form.
 The \<legend> element defines a caption for the \<fieldset> element.
-`<form action="/action_page.php">
- <fieldset>
-  <legend>Personalia:</legend>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
- </fieldset>
-</form>`
+
+`<form action="/action_page.php">`
+
+ `<fieldset>`
+ 
+  `<legend>Personalia:</legend>`
+  
+  `<label for="fname">First name:</label><br>`
+  
+  `<input type="text" id="fname" name="fname" value="John"><br>`
+  
+  `<label for="lname">Last name:</label><br>`
+  
+  `<input type="text" id="lname" name="lname" value="Doe"><br><br>`
+  
+  `<input type="submit" value="Submit">`
+  
+ `</fieldset>`
+ 
+`</form>`
 
 - \<datalist>
 
@@ -360,30 +410,50 @@ The \<legend> element defines a caption for the \<fieldset> element.
   If you have a long list of options, groups of related options are easier to handle for a user.
 
 `<form action="/action_page.php">`
-   `<input list="browsers">`
-   ` <datalist id="browsers">`
-      `  <option value="Internet Explorer">`
-      `<option value="Firefox">`
-      `option value="Chrome">`
-      `  <option value="Opera">`
-      `  <option value="Safari">`
-   ` </datalist>`
+
+`<input list="browsers">`
+
+`<datalist id="browsers">`
+
+`<option value="Internet Explorer">`
+
+`<option value="Firefox">`
+
+`option value="Chrome">`
+
+`<option value="Opera">`
+
+`<option value="Safari">`
+
+`</datalist>`
+
 `</form>`
 
 - \<output>
 
   The \<output> element represents the result of a calculation (like one performed by a script).
-  `<form action="/action_page.php"
-  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-   0
-   <input type="range" id="a" name="a" value="50">
-   100 +
-   <input type="number" id="b" name="b" value="50">
-   =
-   <output name="x" for="a b"></output>
-   <br><br>
-   <input type="submit">
-  </form>`
+  
+  `<form action="/action_page.php"`
+  
+  `oninput="x.value=parseInt(a.value)+parseInt(b.value)">`
+  
+   `0`
+   
+   `<input type="range" id="a" name="a" value="50">`
+   
+   `100 +`
+   
+   `<input type="number" id="b" name="b" value="50">`
+   
+   `=`
+   
+  ` <output name="x" for="a b"></output>`
+  
+   `<br><br>`
+   
+   `<input type="submit">`
+   
+  `</form>`
 
 ## HTML Input Types
 
@@ -497,7 +567,7 @@ https://www.mclibre.org/consultar/htmlcss/html/html-xhtml-diferencias.html
 
 https://www.w3schools.com/html/
 
- Other HTML tags: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+Other HTML tags: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 Accessibility:
 
