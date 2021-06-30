@@ -57,23 +57,30 @@ It must only appear once, at the top of the page (before any HTML tags).
 The <!DOCTYPE> declaration is not case sensitive.
 The <!DOCTYPE> declaration for HTML5 is: <!DOCTYPE html>
 
-## HTML <meta> Tag
+## HTML \<meta> Tag
 
-The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+The \<meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
 
-The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. 
+The \<meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
 
-<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
+\<meta> tags always go inside the \<head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the \<meta> tag (See "Setting The Viewport" example below).
 
-Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).<head>
 
-<head>
- <meta charset="UTF-8">
- <meta name="description" content="Free Web tutorials">
- <meta name="keywords" content="HTML, CSS, JavaScript">
- <meta name="author" content="John Doe">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the \<meta> tag (See "Setting The Viewport" example below).
+
+`<head>`
+
+ `<meta charset="UTF-8">`
+
+ `<meta name="description" content="Free Web tutorials">`
+
+ `<meta name="keywords" content="HTML, CSS, JavaScript">`
+
+ `<meta name="author" content="John Doe">`
+
+ `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+`</head>`
 
 **Attribute**
 
@@ -96,18 +103,39 @@ Metadata will not be displayed on the page, but is machine parsable. Metadata is
 3. Provides an HTTP header for the information/value of the content attribute.
 4. Specifies a name for the metadata.
 
+## Open Graph
+
+By including Open Graph tags in the source code of the web page, they can control how the link to the page will appear on social media. For this reason, Open Graph is also interesting for online marketing . 
+The corresponding tags are introduced in the header of the HTML document as meta property :
+`<meta property="og:title" content="Título de la página web tal y como debe aparecer en Facebook"/>`
+
+Before starting to insert the different meta properties , the vocabulary must be specified in a prefix :
+`<html prefix="og: http://ogp.me/ns#">`
+
+### The main Open Graph tags
+
+Title: `<meta property="og:title" content="Título de la página web"/> `
+
+Description: `<meta property="og:description" content="Descripción de la página web"/>`
+
+Image: `<meta property="og:image" content="http://www.ejemplo.org/imágenes/vistaprevia.jpeg"/>`
+
+URL: `<meta property="og:url" content="http://www.ejemplo.org/artículos/id3498/"/> `
+
+More Tags: https://www.ionos.es/digitalguide/online-marketing/redes-sociales/open-graph/
+
 ## Headings
 
-HTML headings are defined with the <h1> to <h6> tags. <h1> defines the most important heading. <h6> defines the least important heading.
+HTML headings are defined with the \<h1> to \<h6> tags. \<h1> defines the most important heading. \<h6> defines the least important heading.
 
 ## Paragraphs
 
-The HTML <p> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+The HTML \<p> element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 The browser will automatically remove any extra spaces and lines when the page is displayed.
 
 ## HTML Horizontal Rules
 
-The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. The <hr> element is used to separate content (or define a change) in an HTML page.
+The \<hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. The \<hr> element is used to separate content (or define a change) in an HTML page.
 
 ## HTML Line Breaks
 
@@ -115,20 +143,20 @@ The HTML \<br> element defines a line break.
 Use \<br> if you want a line break (a new line) without starting a new paragraph. 
 The \<br> tag is an empty tag, which means that it has no end tag.
 
-## The HTML <pre> Element
+## The HTML \<pre> Element
 
-The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+The text inside a \<pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
 
 ## HTML Quotation and Citation Elements
 
 **Tag**
 
-- [<abbr>](https://www.w3schools.com/tags/tag_abbr.asp)
-- [<address>](https://www.w3schools.com/tags/tag_address.asp)
-- [<bdo>](https://www.w3schools.com/tags/tag_bdo.asp)
-- [<blockquote>](https://www.w3schools.com/tags/tag_blockquote.asp)
-- [<cite>](https://www.w3schools.com/tags/tag_cite.asp)
-- [<q>](https://www.w3schools.com/tags/tag_q.asp)
+- [\<abbr>](https://www.w3schools.com/tags/tag_abbr.asp)
+- [\<address>](https://www.w3schools.com/tags/tag_address.asp)
+- [\<bdo>](https://www.w3schools.com/tags/tag_bdo.asp)
+- [\<blockquote>](https://www.w3schools.com/tags/tag_blockquote.asp)
+- [\<cite>](https://www.w3schools.com/tags/tag_cite.asp)
+- [\<q>](https://www.w3schools.com/tags/tag_q.asp)
 
 **Description**
 
@@ -141,9 +169,9 @@ The text inside a <pre> element is displayed in a fixed-width font (usually Cour
 
 ## HTML Links
 
-The HTML <a> tag defines a hyperlink. It has the following syntax:`<a href="url">link text</a>`
+The HTML \<a> tag defines a hyperlink. It has the following syntax:`<a href="url">link text</a>`
 
-The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+The most important attribute of the \<a> element is the href attribute, which indicates the link's destination.
 The link text is the part that will be visible to the reader.
 Clicking on the link text, will send the reader to the specified URL address.
 
@@ -165,11 +193,11 @@ A local link (a link to a page within the same website) is specified with a rela
 
 ## HTML Images
 
-The HTML <img> tag is used to embed an image in a web page.
+The HTML \<img> tag is used to embed an image in a web page.
 Images are not technically inserted into a web page; images are linked to web pages. 
-The <img> tag creates a holding space for the referenced image.
-The <img> tag is empty, it contains attributes only, and does not have a closing tag.
-The <img> tag has two required attributes: 
+The \<img> tag creates a holding space for the referenced image.
+The \<img> tag is empty, it contains attributes only, and does not have a closing tag.
+The \<img> tag has two required attributes: 
 
 - src - Specifies the path to the image
 - alt - Specifies an alternate text for the image
@@ -194,11 +222,11 @@ Alternatively, you can use the width and height attributes:
 
 ## HTML Tables
 
-The <table> tag defines an HTML table.
-Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. 
-Each table data/cell is defined with a <td> tag.
-By default, the text in <th> elements are bold and centered.
-By default, the text in <td> elements are regular and left-aligned.
+The \<table> tag defines an HTML table.
+Each table row is defined with a \<tr> tag. Each table header is defined with a <th> tag. 
+Each table data/cell is defined with a \<td> tag.
+By default, the text in \<th> elements are bold and centered.
+By default, the text in \<td> elements are regular and left-aligned.
 
 `<table style="width:100%">
  <tr>
@@ -222,7 +250,7 @@ By default, the text in <td> elements are regular and left-aligned.
 
 ### Unordered HTML List
 
-An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+An unordered list starts with the \<ul> tag. Each list item starts with the \<li> tag.
 The list items will be marked with bullets (small black circles) by default.
 
 `<ul>
@@ -233,7 +261,7 @@ The list items will be marked with bullets (small black circles) by default.
 
 ### Ordered HTML List
 
-An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+An ordered list starts with the \<ol> tag. Each list item starts with the \<li> tag.
 The list items will be marked with numbers by default:
 
 `<ol>
@@ -245,7 +273,7 @@ The list items will be marked with numbers by default:
 ### HTML Description Lists
 
 A description list is a list of terms, with a description of each term.
-The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
+The \<dl> tag defines the description list, the \<dt> tag defines the term (name), and the \<dd> tag describes each term.
 
 `<dl>
  <dt>Coffee</dt>
@@ -257,25 +285,25 @@ The <dl> tag defines the description list, the <dt> tag defines the term (name),
 ## HTML Forms
 
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-The HTML <form> element is used to create an HTML form for user input.
-An <input> element can be displayed in many ways, depending on the type attribute.
+The HTML \<form> element is used to create an HTML form for user input.
+An \<input> element can be displayed in many ways, depending on the type attribute.
 
-### The HTML <form> Elements
+### The HTML \<form> Elements
 
-The HTML <form> element can contain one or more of the following form elements:
+The HTML \<form> element can contain one or more of the following form elements:
 
 - \<input>
 - \<label>
 
-The <label> element defines a label for several form elements.
-The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
-The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
-The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+The \<label> element defines a label for several form elements.
+The \<label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+The \<label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the \<label> element, it toggles the radio button/checkbox.
+The for attribute of the \<label> tag should be equal to the id attribute of the \<input> element to bind them together.
 
 - \<select>
 
 The \<select> element defines a drop-down list.
-The <option> elements defines an option that can be selected.
+The \<option> elements defines an option that can be selected.
 By default, the first item in the drop-down list is selected.
 To define a pre-selected option, add the selected attribute to the option.
 `<label **for**="cars">Choose a car:</label>`
@@ -293,7 +321,7 @@ Use the multiple attribute to allow the user to select more than one value.
 
 - \<textarea>
 
-The <textarea> element defines a multi-line input field (a text area).
+The \<textarea> element defines a multi-line input field (a text area).
 The rows attribute specifies the visible number of lines in a text area.
 The cols attribute specifies the visible width of a text area.
 `<textarea name="message" rows="10" cols="30">
@@ -308,8 +336,8 @@ The \<button> element defines a clickable button
 - \<fieldset>
 - \<legend>
 
-The <fieldset> element is used to group related data in a form.
-The <legend> element defines a caption for the <fieldset> element.
+The \<fieldset> element is used to group related data in a form.
+The \<legend> element defines a caption for the \<fieldset> element.
 `<form action="/action_page.php">
  <fieldset>
   <legend>Personalia:</legend>
@@ -327,8 +355,8 @@ The <legend> element defines a caption for the <fieldset> element.
 
 - \<optgroup>
 
-  The <datalist> element specifies a list of pre-defined options for an <input> element.
-  The <optgroup> tag is used to group related options in a [<select>](https://www.w3schools.com/tags/tag_select.asp) element (drop-down list).
+  The \<datalist> element specifies a list of pre-defined options for an \<input> element.
+  The \<optgroup> tag is used to group related options in a \<select> element (drop-down list).
   If you have a long list of options, groups of related options are easier to handle for a user.
 
 `<form action="/action_page.php">`
@@ -344,9 +372,9 @@ The <legend> element defines a caption for the <fieldset> element.
 
 - \<output>
 
-  The <output> element represents the result of a calculation (like one performed by a script).
-  `<form action="/action_page.php"``
-  ``oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  The \<output> element represents the result of a calculation (like one performed by a script).
+  `<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
    0
    <input type="range" id="a" name="a" value="50">
    100 +
@@ -361,49 +389,49 @@ The <legend> element defines a caption for the <fieldset> element.
 
 Here are the different input types you can use in HTML:
 
-<input type="button">
+\<input type="button">
 
-<input type="checkbox">
+\<input type="checkbox">
 
-<input type="color">
+\<input type="color">
 
-<input type="date">
+\<input type="date">
 
-<input type="datetime-local">
+\<input type="datetime-local">
 
-<input type="email">
+\<input type="email">
 
-<input type="file">
+\<input type="file">
 
-<input type="hidden">
+\<input type="hidden">
 
-<input type="image">
+\<input type="image">
 
-<input type="month">
+\<input type="month">
 
-<input type="number">
+\<input type="number">
 
-<input type="password">
+\<input type="password">
 
-<input type="radio">
+\<input type="radio">
 
-<input type="range">
+\<input type="range">
 
-<input type="reset">
+\<input type="reset">
 
-<input type="search">
+\<input type="search">
 
-<input type="submit">
+\<input type="submit">
 
-<input type="tel">
+\<input type="tel">
 
-<input type="text">
+\<input type="text">
 
-<input type="time">
+\<input type="time">
 
-<input type="url">
+\<input type="url">
 
-<input type="week">
+\<input type="week">
 
 ## Form Validation
 
@@ -419,12 +447,45 @@ https://tutorial.techaltum.com/html5-form.html
 
 ### What is XHTML?
 
-XHTML stands for EXtensible HyperText Markup Language
-XHTML is a stricter, more XML-based version of HTML
-XHTML is HTML defined as an XML application
-XHTML is supported by all major browsers
+- XHTML stands for EXtensible HyperText Markup Language
+- XHTML is a stricter, more XML-based version of HTML
+- XHTML is HTML defined as an XML application
+- XHTML is supported by all major browsers
+- XHTML was developed to make HTML more extensible and increase interoperability with other data formats.
 
 Main differences between HTML and XHTML: https://www.mclibre.org/consultar/htmlcss/html/html-xhtml-diferencias.html
+
+In addition, browsers were forgiving of errors in HTML, and most websites were displayed despite technical errors in the markup; XHTML introduced stricter error handling.
+
+## Accessibility
+
+Accessibility is the practice of making your websites usable by as many people as possible. We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections.
+
+You might also think of accessibility as treating everyone the same, and giving them equal opportunities, no matter what their ability or circumstances. 
+
+### What kinds of disabilities are we looking at? 
+
+- People with visual impairments
+- People with hearing impairments
+- People with mobility impairments
+- People with cognitive impairments
+
+### Some aspects we should take care to make our website more accessible:
+
+- Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+- Time-based Media: Provide alternatives for time-based media.
+- Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+- Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+- Keyboard Accessible: Make all functionality available from a keyboard.
+- Enough Time: Provide users enough time to read and use content.
+- Seizures: Do not design content in a way that is known to cause seizures.
+- Navigable: Provide ways to help users navigate, find content, and determine where they are.
+- Readable: Make text content readable and understandable.
+- Predictable: Make Web pages appear and operate in predictable ways.
+- Input Assistance: Help users avoid and correct mistakes.
+- Compatible: Maximize compatibility with current and future user agents, including assistive technologies.
+
+Accessibility Guideline: https://www.w3.org/TR/WCAG20/#text-equiv
 
 ## Bibliography:
 
@@ -436,4 +497,17 @@ https://www.mclibre.org/consultar/htmlcss/html/html-xhtml-diferencias.html
 
 https://www.w3schools.com/html/
 
- Other tags: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+ Other HTML tags: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+Accessibility:
+
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility
+
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
+
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile
+
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript
+
+OG Protocol: https://ogp.me/
+
