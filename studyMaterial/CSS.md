@@ -26,15 +26,17 @@ The rel and type attributes are required too, as they tell the browser which kin
 
 Instead of using the link tag to point to a separate stylesheet containing our CSS, we can add the CSS directly inside a style tag. This is the syntax:
 
-`<style>
-...our **CSS**...
-</style> `
+`<style>`
+
+`...our **CSS**...`
+
+`</style> `
 
 ### 3: inline styles
 
 Inline styles are the third way to add CSS to a page. We can add a style attribute to any HTML tag, and add CSS into it.
 
-`<**div** style="">...</**div**>`
+`<div style="">...</div>`
 
 ## CASCADE
 
@@ -57,20 +59,27 @@ Browsers come with a default set of rules, all different between browsers. Then 
 What happens when an element is targeted by multiple rules, with different selectors, that affect the same property?
 For example, let’s talk about this element:
 
-`<p class="dog-name">
- Roger
-</p>`
+`<p class="dog-name">`
+
+` Roger`
+
+`</p>`
 
 We can have
 
-`.dog-name {
- color: yellow;
-}`
+`.dog-name {`
+
+` color: yellow;`
+
+`}`
+
 and another rule that targets p, which sets the color to another value:
 
-`p {
- color: red;
-}`
+`p {`
+
+ `color: red;`
+ 
+`}`
 
 **Which rule is going to take precedence over the others, and why?**
 
@@ -85,11 +94,16 @@ Specificity is calculated using a convention. We have 4 slots, and each one of t
 The first slot, the rightmost one, is the least important. We increase this value when we have an element selector. An element is a tag name. If you have more than one element selector in the rule, you increment accordingly the value stored in this slot.
 Examples:
 
-p {}          */\* 0 0 0 1 \*/*
-span {}         */\* 0 0 0 1 \*/*
-p span {}        */\* 0 0 0 2 \*/*
-p > span {}       */\* 0 0 0 2 \*/*
-div p > span {}     */\* 0 0 0 3 \*/*
+p {}          /* 0 0 0 1 */
+
+span {}         /* 0 0 0 1 */
+
+p span {}        /* 0 0 0 2 */
+
+p > span {}       /* 0 0 0 2 */
+
+div p > span {}     /* 0 0 0 3 */
+
 
 *Slot 2*
 
@@ -103,10 +117,14 @@ Every time a rule meets one of those, we increment the value of the second colum
 
 Examples:
 
-.name {}         */\* 0 0 1 0 \*/*
-.users .name {}     */\* 0 0 2 0 \*/*
-[href$='.pdf'] {}    */\* 0 0 1 0 \*/*
-:hover {}        */\* 0 0 1 0 \*/*
+.name {}         /* 0 0 1 0 */
+
+.users .name {}     /* 0 0 2 0 */
+
+[href$='.pdf'] {}    /* 0 0 1 0 */
+
+:hover {}        /* 0 0 1 0 */
+
 
 *Slot 3*
 
@@ -114,9 +132,12 @@ Slot 3 holds the most important thing that can affect your CSS specificity in a 
 
 Examples:
 
-#name {}          */\* 0 1 0 0 \*/*
-.user #name {}       */\* 0 1 1 0 \*/*
-#name span {}        */\* 0 1 0 1 \*/*
+#name {}          /* 0 1 0 0 */
+
+.user #name {}       /* 0 1 1 0 */
+
+#name span {}        /* 0 1 0 1 */
+
 
 *Slot 4*
 
@@ -124,7 +145,7 @@ Slot 4 is affected by inline styles. Any inline style will have precedence over 
 
 Example:
 
-`<p style="color: red">Test</p> ` `/* 1 0 0 0 */`
+`<p style="color: red">Test</p> `  `/* 1 0 0 0 */`
 
 Even if any other rule in the CSS defines the color, this inline style rule is going to be applied. Except for one case — if !important is used, which fills the slot 5.
 
@@ -133,7 +154,7 @@ Even if any other rule in the CSS defines the color, this inline style rule is g
 Specificity does not matter if a rule ends with !important:
 
 `p {
- font-size: 20px**!important**;
+ font-size: 20px!important;
 }`
 
 That rule will take precedence over any rule with more specificity. Adding !important in a CSS rule is going to make that rule more important than any other rule, according to the specificity rules. The only way another rule can take precedence is to have !important as well, and have higher specificity in the other less important slots.
@@ -176,11 +197,15 @@ unset: if the property inherits by default, inherit. Otherwise do nothing.
 
 From any CSS file you can import another CSS file using the @**import** directive. Here is how you use it:
 
-`@import url(myfile.css)url()` can manage absolute or relative URLs. One important thing you need to know is that @**import** directives must be put before any other CSS in the file, or they will be ignored. You can use media descriptors to only load a CSS file on the specific media:
+`@import url(myfile.css)`
 
-`@import url(myfile.css) all;
-@import url(myfile-screen.css) screen;
-@import url(myfile-print.css) print;`
+url() can manage absolute or relative URLs. One important thing you need to know is that @**import** directives must be put before any other CSS in the file, or they will be ignored. You can use media descriptors to only load a CSS file on the specific media:
+
+`@import url(myfile.css) all;`
+
+`@import url(myfile-screen.css) screen;`
+
+`@import url(myfile-print.css) print;`
 
 ## SELECTORS
 
@@ -192,31 +217,41 @@ Every HTML tag has a corresponding selector, for example: div, span, img.
 
 If a selector matches multiple elements, all the elements in the page will be affected by the change.
 
-`p {
- color: yellow;
-}`
+`p {`
+
+` color: yellow;`
+
+`}`
 
 **Classes are identified using the . symbol, while ids using the # symbol.**
 
 ### ID selector
 
-`<p id="dog-name">
- Roger
-</p>`
+`<p id="dog-name">`
 
-`#dog-name {
- color: yellow;
-}`
+ `Roger`
+ 
+`</p>`
+
+`#dog-name {`
+
+` color: yellow;`
+
+`}`
 
 ### Class selector
 
-`<p class="dog-name">
- Roger
-</p>`
+`<p class="dog-name">`
 
-`.dog-name {
- color: yellow;
-}`
+ `Roger`
+ 
+`</p>`
+
+`.dog-name {`
+
+ `color: yellow;`
+ 
+`}`
 
 ### Targeting multiple classes
 
@@ -224,24 +259,34 @@ You can target an element with a specific class using .class-name, as you saw pr
 
 Example:
 
-`<p class="dog-name roger">
- Roger
-</p>`
+`<p class="dog-name roger">`
 
-`.dog-name.roger {
- color: yellow;
-}`
+ `Roger`
+ 
+`</p>`
+
+`.dog-name.roger {`
+
+`color: yellow;`
+
+`}`
 
 ### Combining classes and ids
 
 In the same way, you can combine a class and an id.
-Example:																																																																																						`<p class="dog-name" id="roger">
- Roger
-</p>`
+Example:
 
-`.dog-name#roger {
- color: yellow;
-}`
+`<p class="dog-name" id="roger">`
+
+ `Roger`
+ 
+`</p>`
+
+`.dog-name#roger {`
+
+ `color: yellow;`
+ 
+`}`
 
 ### Grouping selectors
 
@@ -249,51 +294,70 @@ You can combine selectors to apply the same declarations to multiple selectors. 
 
 Example:
 
-`<p>
- My dog name is:
-</p>`
+`<p>`
 
-`<span class="dog-name">
- Roger
-</span>`
+ `My dog name is:`
+ 
+`</p>`
 
-`p, .dog-name {
- color: yellow;
-}`
+`<span class="dog-name">`
+
+ `Roger`
+ 
+`</span>`
+
+`p, .dog-name {`
+
+ `color: yellow;`
+ 
+`}`
 
 ### Follow the document tree with selectors
 
 You can create a more specific selector by combining multiple items to follow the document tree structure. For example, if you have a span tag nested inside a p tag, you can target that one without applying the style to a span tag not included in a p tag:
 
-`<span>
- Hello!
-</span>`
+`<span>`
 
-`<p>
- My dog name is:
- <span class="dog-name">
-  Roger
- </span>
-</p>`
+ `Hello!`
+ 
+`</span>`
 
-`p span {
- color: yellow;
-}`
+`<p>`
+
+ `My dog name is:`
+ 
+ `<span class="dog-name">`
+ 
+  `Roger`
+  
+ `</span>`
+ 
+`</p>`
+
+`p span {`
+
+ `color: yellow;`
+ 
+`}`
 
 See how we used a space between the two tokens p and span. This works even if the element on the right is multiple levels deep.
 
 To make the dependency strict on the first level, you can use the **>** symbol between the two tokens: 
 
-`p > span {
- color: yellow;
-}`
+`p > span {`
+
+ `color: yellow;`
+ 
+`}`
 
 Adjacent sibling selectors let us style an element only if preceded by a specific element. We do so using the **+** operator:
 Example:
 
-`p + span {
- color: yellow;
-}`
+`p + span {`
+
+ `color: yellow;`
+ 
+`}`
 
 ### ATTRIBUTE SELECTORS
 
@@ -301,17 +365,21 @@ Example:
 
 The first selector type is the attribute presence selector. We can check if an element has an attribute using the [] syntax. p[id] will select all p tags in the page that have an id attribute, regardless of its value:
 
-`p[id] {
- /* ... */
-}`
+`p[id] {`
+
+ `/* ... */`
+ 
+`}`
 
 #### Exact attribute value selectors
 
 Inside the brackets you can check the attribute value using =, and the CSS will be applied only if the attribute matches the exact value specified:
 
-`p[id="my-id"] {
- /* ... */
-}`
+`p[id="my-id"] {`
+
+ `/* ... */`
+ 
+`}`
 
 #### Match an attribute value portion
 
@@ -339,10 +407,13 @@ These are the most popular pseudo classes you will likely use:![img](https://lh5
 
 **:nth-child()** deserves a special mention. It can be used to target odd or even children with :nth-child(odd) and :nth-child(even). It is commonly used in lists to color odd lines differently from even lines:
 
-`ul:nth-child(odd) {
- color: white;
-  background-color: black;
-}`
+`ul:nth-child(odd) {`
+
+ `color: white;`
+ 
+  `background-color: black;`
+  
+`}`
 
 You can also use it to target the first 3 children of an element with :nth-child(-n+3). Or you can style 1 in every 5 elements with :nth-child(5n).
 
@@ -357,26 +428,34 @@ Here's the list of the pseudo-elements:![img](https://lh5.googleusercontent.com/
 
 Let's do an example. Say you want to make the first line of a paragraph slightly bigger in font size, a common thing in typography:
 
-`p::first-line {
- font-size: 2rem;
-}`
+`p::first-line {`
+
+ `font-size: 2rem;`
+ 
+`}`
 
 Or maybe you want the first letter to be bolder:
 
-`p::first-letter {
- font-weight: bolder;
-}`
+`p::first-letter {`
+
+ `font-weight: bolder;`
+ 
+`}`
 
 ::after and ::before are a bit less intuitive. I remember using them when I had to add icons using CSS.
 You specify the content property to insert any kind of content after or before an element:
 
-`p::before {
- content: url(/myimage.png);
-}`
+`p::before {`
 
-`.myElement::before {
-  content: "Hey Hey!";
-}`
+ `content: url(/myimage.png);`
+ 
+`}`
+
+`.myElement::before {`
+
+  `content: "Hey Hey!";`
+  
+`}`
 
 ## BOX MODEL
 
@@ -415,9 +494,11 @@ If you set that on an element:
 width and height calculation include the padding and the border. Only the margin is left out, which is reasonable since in our mind we also typically see that as a separate thing: margin is outside of the box.
 This property is a small change but has a big impact. CSS Tricks even declared an [international box-sizing awareness day](https://css-tricks.com/international-box-sizing-awareness-day/), just saying, and it's recommended to apply it to every element on the page, out of the box, with this:
 
-`*, *:before, *:after {
- box-sizing: border-box;
-}`
+`*, *:before, *:after {`
+
+ `box-sizing: border-box;`
+ 
+`}`
 
 ## CSS LAYOUT
 
@@ -753,29 +834,41 @@ You need to wrap them in a `@media () {} structure`.
 
 Example: 
 
-`@media screen and (max-width: 800px) {
- /* enter some CSS */
-}` and this is the foundation for responsive design.
+`@media screen and (max-width: 800px) {`
+
+ `/* enter some CSS */`
+ 
+`}` and this is the foundation for responsive design.
 
 Media queries can be quite complex. This example applies the CSS only if it’s a screen device, the width is between 600 and 800 pixels, and the orientation is landscape:
-`@media screen **and** (max-width: 800px) **and** (min-width: 600px) **and** (orientation: landscape) {
- */\* enter some CSS \*/*
-}`
+
+`@media screen **and** (max-width: 800px) **and** (min-width: 600px) **and** (orientation: landscape) {`
+
+ `/* enter some CSS */`
+ 
+`}`
 
 #### Feature queries
 
 Feature queries are a recent and relatively unknown ability of CSS, but a well supported one.
 
 We can use it to check if a feature is supported by the browser using the **@supports** keyword.I think this is especially useful, at the time of writing, for checking if a browser supports CSS grid, for example, which can be done using:
-`@**supports** (display: grid) {
- /* apply this CSS */
-}`
+
+`@**supports** (display: grid) {`
+
+` /* apply this CSS */`
+
+`}`
 
 We check if the browser supports the grid value for the display property. We can use @supports for any CSS property, to check any value.
 
 We can also use the logical operators and, or and not to build complex feature queries:
-`@supports (display: grid) **and** (display: flex) {
- /* apply this CSS */
+
+`@supports (display: grid) **and** (display: flex) {`
+
+ `/* apply this CSS */`
+ 
+ `}`
 
 
 ## Bibliography
